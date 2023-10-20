@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.library'
+	// id 'io.github.gradle-nexus.publish-plugin'
+}
+
+group = "com.thatmg393.libsortalgorithm"
+version = "v1.0-SNAPSHOT"
+
+android {
+	namespace "com.thatmg393.libsortalgorithm"
+    compileSdk 33
+	buildToolsVersion '33.0.1'
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "v1.0-SNAPSHOT"
+    }
+    
+    compileOptions {
+		sourceCompatibility JavaVersion.VERSION_11
+		targetCompatibility JavaVersion.VERSION_11
+	}
+}
+
+/*
+nexusPublishing {
+    repositories {
+        sonatype()
+    }
+}
+*/
+
+dependencies { }
